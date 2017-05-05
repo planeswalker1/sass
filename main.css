@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  margin: 0; }
+
+/*nav styles*/
+nav {
+  background: #032f3e; }
+  nav ul {
+    align-items: center;
+    background: #032f3e;
+    display: flex;
+    height: 4em;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0; }
+  nav li {
+    width: 14%;
+    text-align: center;
+    text-transform: capitalize; }
+  nav a {
+    text-decoration: none;
+    color: #f8f9fb; }
+  nav img {
+    width: 100%; }
+
+h2 {
+  color: #032f3e;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
