@@ -16,6 +16,7 @@ nav ul {
   align-items: center;
   background: #032f3e;
   display: flex;
+  flex-wrap: wrap;
   height: 4em;
   justify-content: center;
   list-style-type: none;
@@ -23,7 +24,7 @@ nav ul {
 }
 
 nav li {
-  width: 14%;
+  flex-basis: 14%;
   text-align: center;
   text-transform: capitalize;
 }
@@ -40,6 +41,7 @@ nav img {
 h2 {
   color: #032f3e;
   text-align: center;
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=main.css.map */
