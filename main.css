@@ -40,8 +40,32 @@ nav img {
 
 h2 {
   color: #032f3e;
-  text-align: center;
   font-size: 2em;
+  text-align: center;
+}
+
+/*.services styles*/
+.services ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.services li {
+  flex-basis: 30%;
+}
+
+.services img {
+  text-align: center;
+}
+
+.services p {
+  color: #032f3e;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
