@@ -7,19 +7,23 @@ body {
   margin: 0;
 }
 
+/*flex styles*/
+nav ul, .services ul, .projects ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
 /*nav styles*/
 nav {
   background: #032f3e;
 }
 
 nav ul {
-  align-items: center;
   background: #032f3e;
-  display: flex;
-  flex-wrap: wrap;
   height: 4em;
-  justify-content: center;
-  list-style-type: none;
   margin: 0;
 }
 
@@ -45,14 +49,6 @@ h2 {
 }
 
 /*.services styles*/
-.services ul {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-}
-
 .services li {
   flex-basis: 30%;
 }
@@ -63,8 +59,19 @@ h2 {
 
 .services p {
   color: #032f3e;
-  font-weight: bold;
   font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*.lessons styles*/
+.lessons img {
+  width: 100%;
+}
+
+/*.projects styles*/
+.projects li {
+  flex-basis: 15%;
   text-align: center;
 }
 
