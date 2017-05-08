@@ -14,18 +14,22 @@ body {
   margin: 0;
 }
 
+// flex styles
+nav ul, .services ul, .projects ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
 /*nav styles*/
 nav {
   background: $deepBlue;
 
   ul {
-    align-items: center;
     background: $deepBlue;
-    display: flex;
-    flex-wrap: wrap;
     height: 4em;
-    justify-content: center;
-    list-style-type: none;
     margin: 0;
   }
 
@@ -54,14 +58,6 @@ h2 {
 // .services styles
 .services {
 
-  ul {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-  }
-
   li {
     flex-basis: 30%;
   }
@@ -72,8 +68,8 @@ h2 {
 
   p {
     color: $deepBlue;
-    font-weight: bold;
     font-size: 1.25em;
+    font-weight: bold;
     text-align: center;
   }
 }
@@ -82,5 +78,14 @@ h2 {
 .lessons {
   img {
     width: 100%;
+  }
+}
+
+// .projects styles
+.projects {
+
+  li {
+    flex-basis: 15%;
+    text-align: center;
   }
 }
