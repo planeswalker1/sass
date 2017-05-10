@@ -76,8 +76,31 @@ h2 {
 
 // .lessons styles
 .lessons {
-  img {
+    background-image: url(img/banner-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
+
+  h3, h4, li {
+    color: #fff;
+    margin: 3%;
+    text-transform: uppercase;
+  }
+
+  h3, h4 {
+    font-size: 3em;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
   }
 }
 
@@ -86,6 +109,5 @@ h2 {
 
   li {
     flex-basis: 15%;
-    text-align: center;
   }
 }
