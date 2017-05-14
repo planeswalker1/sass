@@ -47,6 +47,26 @@ nav {
   }
 }
 
+// banner-1 styles
+.banner-1 {
+  align-items: flex-end;
+  background-image: url(img/banner-1.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  h3, h4 {
+    color: $white;
+    font-size: 5em;
+    margin: 3%;
+    text-transform: uppercase;
+  }
+}
+
 // heading styles
 h2 {
   color: $deepBlue;
