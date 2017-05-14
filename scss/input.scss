@@ -1,0 +1,134 @@
+// variables
+
+// colors
+$deepBlue: #032f3e;
+$offWhite: #f8f9fb;
+$white: #fff;
+
+// body styles
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+
+// flex styles
+nav ul, .services ul, .projects ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+/*nav styles*/
+nav {
+  background: $deepBlue;
+
+  ul {
+    background: $deepBlue;
+    height: 4em;
+    margin: 0;
+  }
+
+  li {
+    flex-basis: 14%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  a {
+    text-decoration: none;
+    color: $offWhite;
+  }
+}
+
+// banner-1 styles
+.banner-1 {
+  align-items: flex-end;
+  background-image: url(img/banner-1.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  h3, h4 {
+    color: $white;
+    font-size: 5em;
+    margin: 3%;
+    text-transform: uppercase;
+  }
+}
+
+// heading styles
+h2 {
+  color: $deepBlue;
+  font-size: 2em;
+  text-align: center;
+}
+
+// .services styles
+.services {
+
+  li {
+    flex-basis: 30%;
+    margin: 0.5%;
+  }
+
+  img {
+    text-align: center;
+  }
+
+  p {
+    color: $deepBlue;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+// .lessons styles
+.lessons {
+    background-image: url(img/banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+  h3, h4, li {
+    color: $white;
+    margin: 3%;
+    text-transform: uppercase;
+  }
+
+  h3, h4 {
+    font-size: 3em;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+// .projects styles
+.projects {
+
+  li {
+    flex-basis: 14%;
+    margin: 1%;
+  }
+}
