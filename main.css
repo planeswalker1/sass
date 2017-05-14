@@ -4,10 +4,10 @@ html, body {
 }
 
 body {
+  font-family: arial, sans-serif;
   margin: 0;
 }
 
-/*flex styles*/
 nav ul, .services ul, .projects ul {
   align-items: center;
   display: flex;
@@ -38,10 +38,7 @@ nav a {
   color: #f8f9fb;
 }
 
-nav img {
-  width: 100%;
-}
-
+/*heading styles */
 h2 {
   color: #032f3e;
   font-size: 2em;
@@ -51,6 +48,7 @@ h2 {
 /*.services styles*/
 .services li {
   flex-basis: 30%;
+  margin: 0.5%;
 }
 
 .services img {
@@ -65,14 +63,39 @@ h2 {
 }
 
 /*.lessons styles*/
-.lessons img {
+.lessons {
+  background-image: url(img/banner-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
+}
+
+.lessons h3, .lessons h4, .lessons li {
+  color: #fff;
+  margin: 3%;
+  text-transform: uppercase;
+}
+
+.lessons h3, .lessons h4 {
+  font-size: 3em;
+}
+
+.lessons ul {
+  padding: 0;
+}
+
+.lessons li {
+  list-style-type: none;
 }
 
 /*.projects styles*/
 .projects li {
-  flex-basis: 15%;
-  text-align: center;
+  flex-basis: 14%;
+  margin: 1%;
 }
 
 /*# sourceMappingURL=main.css.map */
