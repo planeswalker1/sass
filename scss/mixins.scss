@@ -1,1 +1,27 @@
+// flex styles
+// nav ul, .services ul, .projects ul
+@mixin flex {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
 
+// banner styles
+// .banner-1, .lessons
+@mixin banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+// banner blurb styles
+// h3, h4, li
+@mixin blurb {
+  color: $white;
+  margin: 3%;
+}
