@@ -1,9 +1,5 @@
-// variables
-
-// colors
-$deepBlue: #032f3e;
-$offWhite: #f8f9fb;
-$white: #fff;
+@import "variables";
+@import "mixins";
 
 // body styles
 html, body {
@@ -16,20 +12,12 @@ body {
   margin: 0;
 }
 
-// flex styles
-nav ul, .services ul, .projects ul {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style-type: none;
-}
-
 /*nav styles*/
 nav {
   background: $deepBlue;
 
   ul {
+    @include flex;
     background: $deepBlue;
     height: 4em;
     margin: 0;
@@ -52,17 +40,11 @@ nav {
   align-items: flex-end;
   background-image: url(img/banner-1.png);
   background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
+  @include banner;
 
   h3, h4 {
-    color: $white;
+    @include blurb;
     font-size: 5em;
-    margin: 3%;
     text-transform: uppercase;
   }
 }
@@ -76,14 +58,13 @@ h2 {
 
 // .services styles
 .services {
+  ul {
+    @include flex;
+  }
 
   li {
     flex-basis: 30%;
     margin: 0.5%;
-  }
-
-  img {
-    text-align: center;
   }
 
   p {
@@ -98,16 +79,10 @@ h2 {
 .lessons {
     background-image: url(img/banner-2.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+    @include banner;
 
   h3, h4, li {
-    color: $white;
-    margin: 3%;
+    @include blurb;
     text-transform: uppercase;
   }
 
@@ -126,6 +101,9 @@ h2 {
 
 // .projects styles
 .projects {
+  ul {
+    @include flex;
+  }
 
   li {
     flex-basis: 14%;
