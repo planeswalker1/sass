@@ -8,6 +8,7 @@ html, body {
 }
 
 body {
+  box-sizing: border-box;
   font-family: arial, sans-serif;
   margin: 0;
 }
@@ -19,19 +20,21 @@ nav {
   ul {
     @include flex;
     background: $deepBlue;
-    height: 4em;
     margin: 0;
   }
 
   li {
-    flex-basis: 14%;
+    flex-basis: (100% / 6);
     text-align: center;
     text-transform: capitalize;
+
   }
 
   a {
-    text-decoration: none;
     color: $offWhite;
+    height: 4%;
+    text-decoration: none;
+    padding: 0.7%;
   }
 }
 
@@ -44,7 +47,7 @@ nav {
 
   h3, h4 {
     @include blurb;
-    font-size: 5em;
+    font-size: 4em;
     text-transform: uppercase;
   }
 }
@@ -63,15 +66,18 @@ h2 {
   }
 
   li {
-    flex-basis: 30%;
-    margin: 0.5%;
+    flex-basis: (100% / 3);
   }
 
   p {
-    color: $deepBlue;
-    font-size: 1.25em;
-    font-weight: bold;
     text-align: center;
+
+    a {
+      color: $deepBlue;
+      font-size: 1.25em;
+      font-weight: bold;
+      text-decoration: none;
+    }
   }
 }
 
