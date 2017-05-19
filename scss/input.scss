@@ -27,7 +27,9 @@ nav {
     flex-basis: (100% / 6);
     text-align: center;
     text-transform: capitalize;
-
+    &:hover {
+      background: lighten($deepBlue, 6);
+    }
   }
 
   a {
