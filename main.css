@@ -30,6 +30,10 @@ nav {
     text-transform: capitalize;
   }
 
+  nav li:hover {
+      background: #04455b;
+  }
+
   nav a {
     color: #f8f9fb;
     height: 4%;
@@ -55,7 +59,7 @@ nav {
     font-size: 4em;
     text-transform: uppercase;
   }
-  
+
 /*heading styles*/
 h2 {
   color: #032f3e;
