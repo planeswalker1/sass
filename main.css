@@ -90,6 +90,10 @@ h2 {
     font-weight: bold;
     text-decoration: none;
   }
+  
+  .services p a:hover {
+    color: #3e1203;
+  }
 
 /*lessons styles*/
 .lessons {
